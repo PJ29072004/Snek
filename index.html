@@ -1,0 +1,54 @@
+<html>
+    <style>
+        canvas {
+            border: 20px solid black ;
+        }
+        button {
+            background-color: rgba(188, 221, 208, 0.2);
+            position: absolute;
+            padding: 5px 5px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 50%;
+            border-radius: 50px;
+        }
+        #up {
+            top: 150;
+            left: 1660;
+            height: 55px;
+            width: 35px;
+        }
+        #left {
+            top: 210;
+            left: 1600;
+            height: 40px;
+        }
+        #right {
+            top: 210;
+            left: 1700;
+            height: 40px;
+        }
+        #down {
+            top: 250;
+            left: 1660;
+            height: 55px;
+            width: 35px;
+        }
+        #start {
+            top: 400;
+            left: 1650;
+        }
+    </style>
+    <canvas id="can"></canvas>
+    <br> &emsp;
+    <button onclick="Dir(0,-v)" id="up"> &uarr; </button>
+    <br>  
+    <button onclick="Dir(-v,0)" id = "left"> &larr;</button>
+    <button onclick="Dir(v,0)" id="right" > &rarr; </button>
+    <br> &emsp;
+    <button onclick="Dir(0,v)" id="down"> &darr; </button>
+    <br>
+    <button onclick="Start()" id ="start"> START </button>
+    <br>
+    <script src="Snake.js"></script>
+</html>
